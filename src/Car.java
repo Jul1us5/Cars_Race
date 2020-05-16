@@ -4,7 +4,6 @@
  */
 public class Car {
     
-    
     private String name;
     private int maxSpeed;
     private int speed;
@@ -25,7 +24,7 @@ public class Car {
     }
     public int getSpeed() {
         return speed;
-    } 
+    }
     public int getDistance() {
         return distance;
     }
@@ -33,17 +32,19 @@ public class Car {
     public void acceleration(int kiek) {
         this.speed += kiek;
         if(this.speed > maxSpeed) {
-           this.speed = maxSpeed;
+           this.speed = maxSpeed; 
         }
     }
     
     public void deceleration(int kiek) {
         this.speed -= kiek;
         if(this.speed < 0) {
-           this.speed = 0; 
+           this.speed = 0;
         }
     }
+    
     public void start() {
         this.distance += this.speed;
     }
+   
 }
