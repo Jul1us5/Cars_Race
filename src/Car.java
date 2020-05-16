@@ -10,7 +10,7 @@ public class Car {
     private int speed;
     private int distance;
     
-    public void Car(String name, int maxSpeed) {
+    public Car(String name, int maxSpeed) {
         this.name = name;
         this.maxSpeed = maxSpeed;
         this.speed = 0;
