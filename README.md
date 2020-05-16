@@ -1,3 +1,3 @@
 # Cars_Race
 
-Cars rasing game / using JAVA 
+Cars racing game / using JAVA 
