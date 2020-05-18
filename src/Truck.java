@@ -5,8 +5,8 @@ public class Truck extends Car {
     private Boolean spoiler;
     private int weight;
 
-    public Truck(String name, int weight) {
-        super(name, weight);
+    public Truck(String name, int maxSpeed, int weight) {
+        super(name, maxSpeed);
         this.weight = weight;
         this.type = "Truck";
         this.spoiler = false;

@@ -1,5 +1,5 @@
 
-public class SuperCar extends Truck {
+public class SuperCar extends Car {
     
     private String spoiler;
     private boolean SuperCar;
