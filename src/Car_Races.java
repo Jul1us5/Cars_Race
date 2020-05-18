@@ -30,43 +30,49 @@ public class Car_Races {
 //                if (car.getType() == "Super" && car.getSpeed() > 100) {
 //                   car.getSpoiler(); 
 //                }
-                if (Math.random() < 0.4) {
-
-
-                    car.deceleration((int) (Math.random() * 4));
+                if (Math.random() < 0.3) {
 
                     if (car.getType() == "Super" && car.getSpeed() > 100) {
                         car.deceleration((int) (Math.random() * 4) * 2);
                     }
-//                    if (car.getType() == "Truck" && car.getWeight() > 1000) {
-//                        car.deceleration((int) (Math.random() * 0));
-//                    } else if (car.getType() == "Truck" && car.getWeight() > 2000) {
-//                        car.deceleration((int) (Math.random() * 0));
-//                    }
-                } else {
 
-                    car.acceleration((int) (Math.random() * 6));
+                    if (car.getType() == "Truck" && car.getWeight() >= 4000) {
+                        car.deceleration((int) (Math.random() * 4) - 3);
+                    } else if (car.getType() == "Truck" && car.getWeight() >= 7000) {
+                        car.deceleration((int) (Math.random() * 4) - 5);
+                    }
+
+                    car.deceleration((int) (Math.random() * 4));
+
+                } else {
 
                     if (car.getType() == "Super" && car.getSpeed() > 100) {
                         car.acceleration((int) (Math.random() * 6) * 2);
                     }
-//                    if (car.getType() == "Truck" && car.getWeight() > 1000) {
-//                        car.acceleration((int) (Math.random() * 0));
-//                    } else if (car.getType() == "Truck" && car.getWeight() > 2000) {
-//                        car.acceleration((int) (Math.random() * 0));
-//                    }
+                    if (car.getType() == "Truck" && car.getWeight() >= 4000) {
+                        car.acceleration((int) (Math.random() * 6) - 3);
+                    } else if (car.getType() == "Truck" && car.getWeight() >= 7000) {
+                        car.acceleration((int) (Math.random() * 6) - 5);
+                    }
+
+                    car.acceleration((int) (Math.random() * 6));
+
                 }
                 car.start();
             }
             arraySort(cars);
             System.out.println("-----------");
             for (Car car : cars) {
-                System.out.println(car.getName() + "[" + car.getType() + "]" + "[" + car.getSpoiler() + "]" + car.getSpeed() + " " + car.getDistance());
+                System.out.println(" - " + car.getName() + " [" + car.getType() + "]" + "[" + car.getSpoiler() + "]" + car.getSpeed() + " " + car.getDistance());
             }
 
         } while (cars[0].getDistance() < 20000);
         System.out.println("-----Finish------");
+        System.out.println(" ");
         System.out.println("[ WINER is:" + cars[0].getName() + " ]");
+        System.out.println(" ");
+        System.out.println("-----------------------------------------");
+        System.out.println("CAR | CAR TYPE | SPOILER | SPEED | DISTANCE ");
     }
 
     public static void arraySort(Car[] cars) {

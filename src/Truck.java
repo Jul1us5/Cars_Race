@@ -9,7 +9,7 @@ public class Truck extends Car {
         super(name, maxSpeed);
         this.weight = weight;
         this.type = "Truck";
-        this.spoiler = false;
+//        this.spoiler = false;
     }
 
     public int getWeight() {

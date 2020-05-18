@@ -19,7 +19,7 @@ public class Car {
         this.speed = 0;
         this.distance = 0;
         this.type = "Sport";
-        this.spoiler = false;
+//        this.spoiler = false;
     }
 
     public String getName() {
