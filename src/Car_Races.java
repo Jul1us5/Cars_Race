@@ -14,7 +14,11 @@ public class Car_Races {
             new Car("Opel", 200),
             new Car("Toyota", 200),
             new Car("Ferrai", 200),
-            new Car("Niva", 200)
+            new Car("Niva", 200),
+            new Truck("Volvo", 4000),
+            new Truck("Scania", 7000),
+            new SuperCar("Bugatti", 520),
+            new SuperCar("McLaren", 490)
         };
         
         do {
@@ -34,7 +38,8 @@ public class Car_Races {
             }
             
         } while (cars[0].getDistance() < cars[0].getMaxSpeed());
-            System.out.println("WINER is:" + cars[0].getName());
+        System.out.println("-----Finish------");
+            System.out.println("[ WINER is:" + cars[0].getName() + " ]");
     }
     
     public static void arraySort(Car[] cars) {
