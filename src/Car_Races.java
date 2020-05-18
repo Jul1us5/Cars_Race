@@ -34,7 +34,7 @@ public class Car_Races {
             }
             
         } while (cars[0].getDistance() < cars[0].getMaxSpeed());
-            System.out.println("WIN:" + cars[0].getName());
+            System.out.println("WINER is:" + cars[0].getName());
     }
     
     public static void arraySort(Car[] cars) {
